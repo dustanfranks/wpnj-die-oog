@@ -6,7 +6,6 @@
  *
  */
 
-
 class DieOog {
 
 	public static $theme_dir;
@@ -15,7 +14,7 @@ class DieOog {
 	public function __construct() {
 		
 		self::$theme_dir = get_stylesheet_directory_uri();
-		self::$version   = '1.0.1';
+		self::$version   = '1.1.3';
 
 		$this->register_activation_hooks();
 
@@ -77,3 +76,8 @@ class DieOog {
 }
 
 new DieOog();
+
+
+if (class_exists('WooCommerce')) {
+	require('class-woocommerce-helpers.php');
+}

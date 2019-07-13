@@ -3,13 +3,117 @@
  * General + Miscellaneous
  *
  */
+@media (min-width: 992px) {
+  body.woocommerce main#main {
+    padding-top: 30px; } }
+
 /**
  *
  * Header Styles
  *
  */
+header {
+  /**
+	 *
+	 * Desktop
+	 *
+	 */
+  /**
+	 *
+	 * Mobile
+	 *
+	 */ }
+  @media (min-width: 992px) {
+    header {
+      border-bottom: 1px solid #eee; } }
+  header ul#menu-main-menu li.cta a {
+    background: #3c94bc;
+    padding: 15px;
+    color: white; }
+    header ul#menu-main-menu li.cta a:hover {
+      background: white;
+      color: #3c94bc; }
+  header ul#menu-main-menu li.current-menu-item a {
+    background: #d7dec2;
+    color: #5c6938;
+    padding: 15px; }
+  header ul#mobile-menu-main-menu li.cta a {
+    background: #3c94bc;
+    color: white; }
+    header ul#mobile-menu-main-menu li.cta a:hover {
+      background: white;
+      color: #3c94bc; }
+
 /**
  *
  * Footer Styles
  *
  */
+/**
+ *
+ * Page Specific Styles
+ *
+ */
+/*===================================
+=            DONATE PAGE            =
+===================================*/
+#donate-cta-sidebar::before {
+  display: block;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #1c5642;
+  opacity: .5;
+  content: ""; }
+
+#donate-cta-sidebar .fusion-column-content-centered {
+  position: relative;
+  z-index: 99;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+  #donate-cta-sidebar .fusion-column-content-centered .fusion-counters-box .content-box-percentage span.display-counter,
+  #donate-cta-sidebar .fusion-column-content-centered .fusion-counters-box .content-box-percentage span.unit {
+    color: white; }
+
+#donate-cta-sidebar .counter-box-content {
+  color: white !important; }
+
+#donate-cta-wrapper .fusion-layout-column.fusion-one-third::before {
+  display: block;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #1c5642;
+  opacity: .5;
+  content: ""; }
+
+#donate-cta-wrapper .fusion-layout-column.fusion-one-third .fusion-column-content-centered {
+  position: relative;
+  z-index: 99;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); }
+
+/*===================================
+=            404 PAGE            =
+===================================*/
+#post-404page {
+  text-align: center;
+  padding-top: 20px; }
+  @media (min-width: 992px) {
+    #post-404page {
+      padding-top: 30px; } }
+  #post-404page .cta-btn {
+    display: inline-block;
+    background: #3c94bc;
+    border: 2px solid #3c94bc;
+    padding: 25px;
+    color: white;
+    transform: all 0.3s ease-in-out;
+    font-size: 18px; }
+    #post-404page .cta-btn:hover {
+      background: white;
+      color: #3c94bc; }

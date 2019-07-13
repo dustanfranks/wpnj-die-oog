@@ -21,9 +21,10 @@
 	 */
 	?>
 	<div>
-		<?php echo html_entity_decode( do_shortcode( Avada()->settings->get( 'footer_text' ) ) ); // WPCS: XSS ok. 
+		<?php 
 
 			echo '&nbsp;' . the_date('Y');
+			echo html_entity_decode( do_shortcode( Avada()->settings->get( 'footer_text' ) ) ); // WPCS: XSS ok. 
 
 		?>
 

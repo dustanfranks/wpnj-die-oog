@@ -5,10 +5,24 @@
  *
  */
 
-html, body {
-	
-}
+$cta-blue: #3c94bc;
+$cta-green: #a0b26f;
 
+body {
+	
+	&.woocommerce {
+		
+		main#main {
+			
+			@media(min-width: 992px) {
+				padding-top: 30px;
+			}
+
+		}	
+
+	}
+
+}
 
 /**
  *
@@ -17,9 +31,79 @@ html, body {
  */
 
 header {
+	@media(min-width: 992px) {
+		border-bottom: 1px solid #eee;
+	}
+	
+	/**
+	 *
+	 * Desktop
+	 *
+	 */
+	
+	ul#menu-main-menu {
+	
+		li {
+			
+			&.cta {
+
+				a {
+					background: $cta-blue;
+					padding: 15px;
+					color: white;
+
+					&:hover {
+						background: white;
+						color: $cta-blue;
+					}
+				}
+
+			}
+
+
+			&.current-menu-item {
+				a {
+					background: lighten($cta-green, 25%);
+					color: darken($cta-green, 25%);
+					padding: 15px;
+				}
+			}
+		}
+		// END li
+
+	}
+	// END ul#menu-main-menu
+	
+	/**
+	 *
+	 * Mobile
+	 *
+	 */
+	
+	ul#mobile-menu-main-menu {
+
+		li {
+			
+			&.cta {
+
+				a {
+					background: $cta-blue;
+					color: white;
+
+					&:hover {
+						background: white;
+						color: $cta-blue;
+					}
+				}
+
+			}
+		}
+		// END li
+
+	}
 
 }
-
+// END header
 
 /**
  *
@@ -29,4 +113,114 @@ header {
 
 footer {
 
+}
+
+
+/**
+ *
+ * Page Specific Styles
+ *
+ */
+
+/*===================================
+=            DONATE PAGE            =
+===================================*/
+
+#donate-cta-sidebar {
+
+ 	//backdrop
+	&::before {
+		display: block;
+		position: absolute;
+		z-index: 9;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: #1c5642;
+		opacity: .5;
+		content: "";
+	}
+
+	.fusion-column-content-centered {
+		position: relative;
+		z-index: 99;
+		text-shadow: 1px 1px 1px rgba(black, 0.4);
+
+		.fusion-counters-box .content-box-percentage {
+			i {
+
+			}
+
+			span.display-counter,
+			span.unit {
+				color: white;
+			}
+
+
+		}
+	}
+
+	.counter-box-content {
+		color: white !important;
+	}
+
+}
+// END #donate-cta-sidebar
+
+#donate-cta-wrapper {
+	
+	// one third column wrapper
+	.fusion-layout-column.fusion-one-third {
+		
+		//backdrop
+		&::before {
+			display: block;
+			position: absolute;
+			z-index: 9;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background: #1c5642;
+			opacity: .5;
+			content: "";
+		}
+		
+		// the content
+		.fusion-column-content-centered {
+			position: relative;
+			z-index: 99;
+			text-shadow: 1px 1px 1px rgba(black, 0.4);
+		}
+	}
+	
+}
+
+/*===================================
+=            404 PAGE            =
+===================================*/
+
+#post-404page {
+	text-align: center;
+	padding-top: 20px;
+
+	@media(min-width: 992px) {
+		padding-top: 30px;
+	}
+
+	.cta-btn {
+		display: inline-block;
+		background: $cta-blue;
+		border: 2px solid $cta-blue;
+		padding: 25px;
+		color: white;
+		transform: all 0.3s ease-in-out;
+		font-size: 18px;
+
+		&:hover {
+			background: white;
+			color: $cta-blue;
+		}
+	}
 }
