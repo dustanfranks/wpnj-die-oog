@@ -1,0 +1,5 @@
+#Folders
+node_modules/
+.phpintel/
+.sass-cache/
+dist/
