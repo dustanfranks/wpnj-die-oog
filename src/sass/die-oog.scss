@@ -47,14 +47,20 @@ header {
 			
 			&.cta {
 
+				&.current-menu-item {
+					a {
+						color: white !important;
+					}
+				}
+
 				a {
-					background: $cta-blue;
-					padding: 15px;
-					color: white;
+					background: #3c94bc !important;
+					padding: 15px !important;
+					color: #fff !important;
 
 					&:hover {
-						background: white;
-						color: $cta-blue;
+						background: transparent  !important;
+	    				color: #3c94bc !important;
 					}
 				}
 
@@ -63,9 +69,9 @@ header {
 
 			&.current-menu-item {
 				a {
-					background: lighten($cta-green, 25%);
-					color: darken($cta-green, 25%);
-					padding: 15px;
+					 background: #d7dec2;
+	    			 color: #333 !important;
+	    			 padding: 15px;
 				}
 			}
 		}
@@ -205,22 +211,32 @@ footer {
 	text-align: center;
 	padding-top: 20px;
 
+	img {
+		max-width: 40%;
+	}
+
 	@media(min-width: 992px) {
 		padding-top: 30px;
+
+		img {
+			max-width: 25%;
+		}
 	}
 
 	.cta-btn {
 		display: inline-block;
-		background: $cta-blue;
-		border: 2px solid $cta-blue;
-		padding: 25px;
+		background: #a0b26f;
+		box-sizing: border-box;
+		height: 40px;
+		line-height: 40px;
+		width: 180px;
 		color: white;
 		transform: all 0.3s ease-in-out;
 		font-size: 18px;
+		text-transform: uppercase;
 
 		&:hover {
-			background: white;
-			color: $cta-blue;
+			background: #1c5642;
 		}
 	}
 }

@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			
 			<img src="<?= DieOog::$theme_dir; ?>/dist/images/404.png" alt="">
 
-			<h1>Oops, Nothing found here</h1>
+			<h1>Oops, nothing found here.</h1>
 
 			<a href="<?= get_bloginfo('url'); ?>" class="cta-btn">Hop On Home</a>
 

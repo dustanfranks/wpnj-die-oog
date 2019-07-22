@@ -14,7 +14,7 @@ class DieOog {
 	public function __construct() {
 		
 		self::$theme_dir = get_stylesheet_directory_uri();
-		self::$version   = '1.1.4';
+		self::$version   = '1.1.5';
 
 		$this->register_activation_hooks();
 
@@ -48,7 +48,7 @@ class DieOog {
 	    if ($this->is_development()) : 
 
 	    	// Main CSS Files
-	    	wp_enqueue_style( 'die-oog', self::$theme_dir . '/src/css/die-oog.css');
+	    	wp_enqueue_style( 'die-oog', self::$theme_dir . '/src/css/die-oog.css', null);
 
 	  	else :
 

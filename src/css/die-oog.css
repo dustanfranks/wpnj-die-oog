@@ -26,16 +26,18 @@ header {
   @media (min-width: 992px) {
     header {
       border-bottom: 1px solid #eee; } }
+  header ul#menu-main-menu li.cta.current-menu-item a {
+    color: white !important; }
   header ul#menu-main-menu li.cta a {
-    background: #3c94bc;
-    padding: 15px;
-    color: white; }
+    background: #3c94bc !important;
+    padding: 15px !important;
+    color: #fff !important; }
     header ul#menu-main-menu li.cta a:hover {
-      background: white;
-      color: #3c94bc; }
+      background: transparent  !important;
+      color: #3c94bc !important; }
   header ul#menu-main-menu li.current-menu-item a {
     background: #d7dec2;
-    color: #5c6938;
+    color: #333 !important;
     padding: 15px; }
   header ul#mobile-menu-main-menu li.cta a {
     background: #3c94bc;
@@ -103,17 +105,23 @@ header {
 #post-404page {
   text-align: center;
   padding-top: 20px; }
+  #post-404page img {
+    max-width: 40%; }
   @media (min-width: 992px) {
     #post-404page {
-      padding-top: 30px; } }
+      padding-top: 30px; }
+      #post-404page img {
+        max-width: 25%; } }
   #post-404page .cta-btn {
     display: inline-block;
-    background: #3c94bc;
-    border: 2px solid #3c94bc;
-    padding: 25px;
+    background: #a0b26f;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    width: 180px;
     color: white;
     transform: all 0.3s ease-in-out;
-    font-size: 18px; }
+    font-size: 18px;
+    text-transform: uppercase; }
     #post-404page .cta-btn:hover {
-      background: white;
-      color: #3c94bc; }
+      background: #1c5642; }
