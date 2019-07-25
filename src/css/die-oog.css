@@ -56,10 +56,10 @@ header {
  * Header Background Filters
  *
  */
-body:not(.home) .post-content > div:nth-of-type(1) .fusion-builder-row {
+.filter-row {
   position: relative;
   text-shadow: 1px 1px 1px black; }
-  body:not(.home) .post-content > div:nth-of-type(1) .fusion-builder-row::before {
+  .filter-row::before {
     display: block;
     position: absolute;
     z-index: 9;
@@ -70,7 +70,7 @@ body:not(.home) .post-content > div:nth-of-type(1) .fusion-builder-row {
     background: #1c5642;
     opacity: .4;
     content: ""; }
-  body:not(.home) .post-content > div:nth-of-type(1) .fusion-builder-row .fusion_builder_column {
+  .filter-row .fusion_builder_column {
     z-index: 99; }
 
 body.home #sliders-container .rev_slider > ul > li .slotholder::before {

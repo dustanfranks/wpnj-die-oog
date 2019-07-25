@@ -14,7 +14,7 @@ class DieOog {
 	public function __construct() {
 		
 		self::$theme_dir = get_stylesheet_directory_uri();
-		self::$version   = '1.1.6';
+		self::$version   = '1.1.7';
 
 		$this->register_activation_hooks();
 
